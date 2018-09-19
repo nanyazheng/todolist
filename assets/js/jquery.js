@@ -43,6 +43,7 @@ $('ul').on('click', 'span', function() {
 $("input[type='text']").keypress(function(event) {
     if (event.which == 13) { 
         let text = $(this).val();
+        $(this).val("");
         $('ul').append("<li><span><i class='fas fa-trash'></i></span> " + text + "</li>")   
     }
 }) 
